@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="portfolio-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p>Portfolio</p>
+            <h2>Few Projects that I have built</h2>
+            <span class="sec-divider">
+              <span class="sec-dot"></span>
+              <span class="sec-dot-big"></span>
+              <span class="sec-dot"></span>
+            </span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="projects-filter">
+            <button class="btn btn-outline current" data-filter="*">
+              all
+            </button>
+            <button class="btn btn-outline" data-filter="one">
+              one
+            </button>
+            <button class="btn btn-outline" data-filter="two">
+              two
+            </button>
+            <button class="btn btn-outline" data-filter="three">
+              three
+            </button>
+            <button class="btn btn-outline" data-filter="four">
+              four
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="projects-content">
+              <div class="col-md-4 four">
+                <div class="portfolio-img">
+                  <img
+                    src="https://images.pexels.com/photos/5540721/pexels-photo-5540721.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="img-fluid portimg"
+                    alt=""
+                  />
+                  <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">Bricks</div>
+                    <p class="image__description">
+                      Here we have a brick wall.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 three">
+                <div class="portfolio-img">
+                  <img
+                    src="https://images.pexels.com/photos/5540721/pexels-photo-5540721.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="img-fluid portimg"
+                    alt=""
+                  />
+                  <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">Bricks</div>
+                    <p class="image__description">
+                      Here we have a brick wall.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 all two">
+                <div class="portfolio-img">
+                  <img
+                    src="https://images.pexels.com/photos/5540721/pexels-photo-5540721.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="img-fluid portimg"
+                    alt=""
+                  />
+                  <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">Bricks</div>
+                    <p class="image__description">
+                      Here we have a brick wall.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 one">
+                <div class="portfolio-img">
+                  <img
+                    src="https://images.pexels.com/photos/5540721/pexels-photo-5540721.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="img-fluid portimg"
+                    alt=""
+                  />
+                  <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">Bricks</div>
+                    <p class="image__description">
+                      Here we have a brick wall.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 all one">
+                <div class="portfolio-img">
+                  <img
+                    src="https://images.pexels.com/photos/5540721/pexels-photo-5540721.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="img-fluid portimg"
+                    alt=""
+                  />
+                  <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">Bricks</div>
+                    <p class="image__description">
+                      Here we have a brick wall.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 all four">
+                <div class="portfolio-img">
+                  <img
+                    src="https://images.pexels.com/photos/5540721/pexels-photo-5540721.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    class="img-fluid portimg"
+                    alt=""
+                  />
+                  <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">Bricks</div>
+                    <p class="image__description">
+                      Here we have a brick wall.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

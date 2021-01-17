@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="container">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://images.pexels.com/photos/4173624/pexels-photo-4173624.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.pexels.com/photos/4004374/pexels-photo-4004374.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.pexels.com/photos/1114690/pexels-photo-1114690.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://images.pexels.com/photos/4173624/pexels-photo-4173624.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.pexels.com/photos/4004374/pexels-photo-4004374.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.pexels.com/photos/1114690/pexels-photo-1114690.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://images.pexels.com/photos/4173624/pexels-photo-4173624.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.pexels.com/photos/4004374/pexels-photo-4004374.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://images.pexels.com/photos/1114690/pexels-photo-1114690.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <br />
+        <br />
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div> -->
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 6,
+        spaceBetween: 20,
+        freeMode: true,
+        loop: true,
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev"
+        // },
+        breakpoints: {
+          // when window width is <= 499px
+          499: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 30
+          },
+          // when window width is <= 999px
+          999: {
+            slidesPerView: 6,
+            spaceBetweenSlides: 40
+          }
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      });
+    </script>
+  </body>
+</html>

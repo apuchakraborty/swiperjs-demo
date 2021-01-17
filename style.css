@@ -1,0 +1,90 @@
+.portfolio-section {
+  padding: 6rem 0 8rem 0;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.portfolio-section h2 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.portfolio-section .portfolio-img {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.portfolio-section .portfolio-img .portimg {
+  display: block;
+  width: 100%;
+}
+
+.portfolio-section .portfolio-img .image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+  cursor: ne-resize;
+}
+
+.portfolio-section .portfolio-img .image__overlay--blur {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.portfolio-section .portfolio-img .image__overlay--primary {
+  background: #3c1ab5;
+}
+
+.portfolio-section .portfolio-img .image__overlay > * {
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+}
+
+.portfolio-section .portfolio-img .image__overlay:hover {
+  opacity: 1;
+}
+
+.portfolio-section .portfolio-img .image__overlay:hover > * {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.portfolio-section .portfolio-img .image__title {
+  font-size: 5em;
+  font-weight: 700;
+  color: #ccf381;
+}
+
+.portfolio-section .portfolio-img .image__description {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
+
+.portfolio-section .portfolio-img .projects-filter {
+  padding: 2rem 0 2rem 0;
+}
